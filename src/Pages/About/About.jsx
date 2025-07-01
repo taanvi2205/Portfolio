@@ -18,7 +18,7 @@ const About = () => {
                     visually stunning and user-friendly websites. I love transforming ideas into interactive
                     digital experiences that not only look good but also perform smoothly.
                 </p>
-                <img src="/assets/me2.jpeg" alt="" />
+                <img src="assets/me2.jpeg" alt="" />
                 {/* <p>
                     My journey started with a love for front-end development — bringing designs to life 
                     with <span className="highlight">HTML, CSS, JavaScript, and React</span>. Over time, I expanded 
@@ -59,7 +59,7 @@ const About = () => {
                         <div className='my-details'>
                             <p className="resume-heading">Resume/CV</p>
                             <p className="download">Download my resume</p>
-                             <a href="/assets/Taanvi-resume.pdf" download>
+                             <a href="assets/Taanvi-resume.pdf" download>
                                 <button className='download-button'>
                                 <FaDownload /> Download
                                 </button>
