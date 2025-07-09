@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    
     <script src="https://www.goat1000.com/tagcanvas.min.js"></script>
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CEEPHCVSZQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/tagcloud@2.2.0/build/TagCloud.min.js"></script> -->
-
+      gtag('config', 'G-CEEPHCVSZQ');
+    </script>
+    
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-
   </body>
 </html>
