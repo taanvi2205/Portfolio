@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import Footer from './Components/Footer/Footer'
 import Skills from './Pages/Skills/Skills'
 import Projects from './Pages/Projects/Projects'
+import Contributions from './Pages/Contributions/Contributions'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +26,10 @@ function App() {
 
       <section id='skills' name='skills'>
         <Skills/>
+      </section>
+
+      <section id='contributions' name='contributions'>
+        <Contributions/>
       </section>
 
 

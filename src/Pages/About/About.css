@@ -1,96 +1,92 @@
 .about-container{
     color: #F2F3D9;
     text-align: center;
-    min-height: 60vh;
-    
-}
-
-.about-container{
-    color: #F2F3D9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+    margin-top: -100px;
 }
 
 .about-container h2{
     font-size: 4rem;
     color: #F2F3D9;
-    padding-bottom: 80px;
+    padding-bottom: 4rem;
     font-weight: 200;
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
 }
 
-.about-description{
-    width: 60%;
-    display: flex;
-    gap: 2rem;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-    font-size: 1.2rem;
-    align-items: center;
-    justify-content: center;
-}
-
 .highlight {
-  color: #dc9e82; 
+  color: #dc9e82;
   font-weight: 600;
-}
-
-.about-me{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-}
-
-.education{
-    height: 300px;
-    width: 500px;
-    text-align: left;
-}
-
-.ab-heading{
-    font-size: 2rem;
-    display: flex;
-}
-
-.cap-icon{
-    padding-right: 5px;
-    font-size: 3rem;
-}
-
-.res.icon{
-    font-size: 2.1rem;
-    padding-right: 5px;
-}
-
-.resume{
-    height: 300px;
-    width: 500px;
-    text-align: left;
 }
 
 .desc-container{
     display: flex;
-    flex-direction: column;
-    gap: 100px;
+    flex-direction: row;
+    gap: 6rem;
     align-items: center;
     justify-content: center;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.about-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 400px;
+}
+
+.about-left img{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-left p{
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.education, .resume{
+    text-align: left;
+}
+
+.ab-heading{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cap-icon, .res-icon{
+    font-size: 2.2rem;
 }
 
 .my-details {
-  height: 200px;
-  width: 100%;
+  width: 450px;
   border: 2px solid #C16E70;
-  margin-top: 30px;
-  border-radius: 30px;
-  box-shadow:0 0 10px #C16E70, 0 0 20px #C16E70, 0 0 30px #C16E70;
-  background-color: rgba(242, 243, 217, 0.02); /* subtle background */
+  margin-top: 1rem;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #C16E70, 0 0 20px #C16E70;
+  background-color: rgba(242, 243, 217, 0.02);
   transition: all 0.3s ease;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   box-sizing: border-box;
 }
 
@@ -101,42 +97,47 @@
 }
 
 .college-name{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
 }
 
 .btech{
-    padding-top: 1rem;
     color: #dc9e82;
+    font-size: 1.1rem;
 }
 
 .date{
-    padding-top: 1.2rem;
-    font-size: 0.8rem;
+    padding-top: 0.8rem;
+    font-size: 0.9rem;
     opacity: 0.6;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
 }
 
 .resume-heading{
-    font-size: 1.8rem;
-}
-
-.download{
-    padding-top: 1rem;
-    color: #dc9e82;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
 }
 
 .download-button{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     height: 3rem;
     width: 100%;
-    border-radius: 30px;
+    border-radius: 25px;
     background-color: #C16E70;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #F2F3D9;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: transform 0.2s ease;
 }
 
-.about-description img{
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
+.download-button:hover{
+    transform: scale(1.05);
 }
 

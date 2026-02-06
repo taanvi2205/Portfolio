@@ -10,7 +10,7 @@ const Hero = () => {
             <div className="glitch-wrapper">
                 <h2 className="text" data-text="Taanvi Khevaria">Taanvi Khevaria</h2>
             </div>
-            <h2 className="description">A Web Developer & UI Design Enthusiast</h2>
+            <h2 className="description">A Web Developer & Open Source Enthusiast</h2>
 
             <div className="header-icons">
                     <a href="https://www.linkedin.com/in/taanvi/" target="_blank" rel="noopener noreferrer">

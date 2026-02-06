@@ -8,16 +8,20 @@ const logos = [
     { name: "C++", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
     { name: "Python", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
     { name: "JavaScript", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+    { name: "TypeScript", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+    { name: "Java", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
     { name: "HTML", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
     { name: "CSS", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
     { name: "PHP", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
     { name: "SQL", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
 
-    // Tools
+    // Tools & DevOps
     { name: "VS Code", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
     { name: "Git", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
     { name: "GitHub", url: "/assets/image.png" },
     { name: "Anaconda", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" },
+    { name: "Docker", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+    { name: "Maven", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" },
 
     // Frameworks & Libraries
     { name: "React.js", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
@@ -26,21 +30,26 @@ const logos = [
     { name: "Node.js", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
     { name: "TailwindCSS", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
     { name: "Flask", url: "/assets/flask.png" },
+    { name: "Spring Boot", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+    { name: "Redux", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+    { name: "Bootstrap", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
 
-    // CS Concepts (no logos — will use text fallback)
-    //   { name: "DSA", url: null },
-    //   { name: "DBMS", url: null },
-    //   { name: "Operating Systems", url: null },
-    //   { name: "OOP", url: null },
+    // Databases
+    { name: "CouchDB", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/couchdb/couchdb-original.svg" },
+
+    // Testing
+    { name: "Jest", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" },
+    { name: "Cypress", url: "/assets/cypress.png" },
 ];
 const groupedSkills = [
-  ["C", "C++", "Python"], // row 1 - 3 items
-  ["JavaScript", "HTML", "CSS", "PHP"], // row 2 - 4 items
-  ["TailwindCSS", "VS Code"], // row 3 - 2 items
-  ["Git", "GitHub", "React.js", "Express.js"], // row 4 - 5 items
-  [ "Node.js", "SQL", "Flask"], 
-  ["MongoDB","DSA"],
-  ["DBMS", "OS", "OOP"]
+  ["Java", "TypeScript", "JavaScript", "Python"],
+  ["C", "C++", "HTML", "CSS", "PHP"],
+  ["Spring Boot", "React.js", "Redux", "Node.js"],
+  ["Express.js", "Flask", "Bootstrap", "TailwindCSS"],
+  ["Docker", "Maven", "Git", "GitHub"],
+  ["CouchDB", "MongoDB", "SQL"],
+  ["Jest", "Cypress", "VS Code", "Anaconda"],
+  ["DSA", "DBMS", "OS", "OOP"]
 ];
 
 const Skills = () => {

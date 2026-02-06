@@ -1,4 +1,4 @@
-.projects-container {
+.contributions-container {
     color: #F2F3D9;
     text-align: center;
     min-height: 100vh;
@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-.projects-container h2 {
+.contributions-container h2 {
     font-size: 4rem;
     color: #F2F3D9;
     padding-bottom: 1rem;
@@ -21,7 +21,7 @@
     animation-range: entry 0 cover 20%;
 }
 
-.projects-subtitle {
+.contributions-subtitle {
     font-size: 1.2rem;
     color: #dc9e82;
     margin-bottom: 3rem;
@@ -30,7 +30,7 @@
     animation-range: entry 0 cover 20%;
 }
 
-.projects-grid {
+.contributions-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1.5rem;
@@ -41,68 +41,85 @@
     animation-range: entry 0 cover 15%;
 }
 
-.project-card {
+.contribution-card {
     background-color: rgba(242, 243, 217, 0.02);
     border: 2px solid #C16E70;
     border-radius: 20px;
-    overflow: hidden;
+    padding: 1.5rem;
     text-align: left;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(193, 110, 112, 0.3);
-    position: relative;
-    padding: 0;
 }
 
-.project-card:hover {
+.contribution-card:hover {
     background-color: rgba(242, 243, 217, 0.05);
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(193, 110, 112, 0.5);
 }
 
-.project-image {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    border-radius: 18px 18px 0 0;
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    margin: 0;
-    padding: 0;
-    border-radius: 18px 18px 0 0;
-    transition: transform 0.3s ease;
+.pr-icon {
+    font-size: 1.5rem;
+    color: #C16E70;
 }
 
-.project-card:hover .project-image img {
-    transform: scale(1.05);
+.status {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-.project-content {
-    padding: 1.5rem;
+.status.merged {
+    background-color: rgba(138, 43, 226, 0.2);
+    color: #a855f7;
+    border: 1px solid #a855f7;
 }
 
-.project-title {
-    font-size: 1.2rem;
+.status.open {
+    background-color: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+    border: 1px solid #22c55e;
+}
+
+.card-title {
+    font-size: 1.1rem;
     font-weight: 500;
     color: #F2F3D9;
     margin-bottom: 0.8rem;
+    line-height: 1.4;
 }
 
-.project-description {
+.card-repo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #dc9e82;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-bottom: 0.8rem;
+    transition: color 0.2s ease;
+}
+
+.card-repo:hover {
+    color: #C16E70;
+}
+
+.card-description {
     font-size: 0.9rem;
     color: rgba(242, 243, 217, 0.7);
     line-height: 1.5;
     margin-bottom: 1rem;
 }
 
-.project-tech {
+.tech-stack {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -118,14 +135,20 @@
     font-weight: 500;
 }
 
-.project-links {
+.card-footer {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 1rem;
     border-top: 1px solid rgba(193, 110, 112, 0.3);
 }
 
-.project-link {
+.card-date {
+    font-size: 0.8rem;
+    color: rgba(242, 243, 217, 0.5);
+}
+
+.view-pr {
     display: flex;
     align-items: center;
     gap: 0.4rem;
@@ -135,34 +158,26 @@
     transition: all 0.2s ease;
 }
 
-.project-link:hover {
+.view-pr:hover {
     color: #dc9e82;
     transform: translateX(3px);
 }
 
-.project-link.live {
-    color: #a855f7;
-}
-
-.project-link.live:hover {
-    color: #c084fc;
+.view-pr svg {
+    font-size: 0.7rem;
 }
 
 @media (max-width: 768px) {
-    .projects-container h2 {
+    .contributions-container h2 {
         font-size: 2.5rem;
     }
 
-    .projects-grid {
+    .contributions-grid {
         grid-template-columns: 1fr;
         padding: 0 1rem;
     }
 
-    .project-image {
-        height: 180px;
-    }
-
-    .project-content {
+    .contribution-card {
         padding: 1.2rem;
     }
 }

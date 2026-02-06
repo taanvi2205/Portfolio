@@ -28,6 +28,13 @@
   background-color: rgba(242, 243, 217, 0.05);
 }
 
+.component.active {
+  box-shadow: 0 0 10px #C16E70, 0 0 20px #C16E70;
+  background-color: rgba(193, 110, 112, 0.15);
+  color: #C16E70 !important;
+  border-bottom: 2px solid #C16E70;
+}
+
 
 
 .navbar a{

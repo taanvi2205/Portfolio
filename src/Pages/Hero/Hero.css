@@ -216,9 +216,9 @@ h1{
 
 @keyframes typing {
   0%   { width: 0 }
-  40%  { width: 35ch }   
-  60%  { width: 35ch }  
-  100% { width: 0 }   
+  40%  { width: 42ch }
+  60%  { width: 42ch }
+  100% { width: 0 }
 }
 
 @keyframes blink {
