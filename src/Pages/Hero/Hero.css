@@ -203,11 +203,13 @@ h1{
 } */
 
 .description {
+  display: inline-block;
   overflow: hidden;
   border-right: 2px solid #C16E70;
   white-space: nowrap;
   letter-spacing: 1px;
-  animation: typing 10s steps(35, end) 1s infinite,
+  max-width: max-content;
+  animation: typing 10s steps(62, end) 1s infinite,
              blink 0.75s step-end infinite;
   width: 0;
   color: #F2F3D9;
@@ -216,8 +218,8 @@ h1{
 
 @keyframes typing {
   0%   { width: 0 }
-  40%  { width: 42ch }
-  60%  { width: 42ch }
+  40%  { width: 100% }
+  60%  { width: 100% }
   100% { width: 0 }
 }
 

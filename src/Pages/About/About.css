@@ -4,16 +4,16 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 4rem 2rem;
+    padding: 6rem 2rem;
     box-sizing: border-box;
-    margin-top: -100px;
+    gap: 3rem;
 }
 
 .about-container h2{
     font-size: 4rem;
     color: #F2F3D9;
-    padding-bottom: 4rem;
     font-weight: 200;
     animation: appear linear;
     animation-timeline: view();
@@ -25,46 +25,55 @@
   font-weight: 600;
 }
 
-.desc-container{
+/* ---- Intro: photo on top, bio below ---- */
+.about-intro{
     display: flex;
-    flex-direction: row;
-    gap: 6rem;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 1.8rem;
+    max-width: 720px;
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
 }
 
-.about-left{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    max-width: 400px;
-}
-
-.about-left img{
-    height: 280px;
-    width: 280px;
+.about-intro img{
+    height: 220px;
+    width: 220px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #C16E70;
+    box-shadow: 0 0 18px rgba(193, 110, 112, 0.5);
 }
 
-.about-left p{
-    font-size: 1.25rem;
+.about-intro p{
+    font-size: 1.2rem;
     text-align: center;
-    line-height: 1.8;
+    line-height: 1.85;
 }
 
-.about-right{
+/* ---- Cards row: Education + Resume side by side ---- */
+.about-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.education, .resume, .gsoc{
+    text-align: left;
+    flex: 1;
+    min-width: 320px;
+    max-width: 460px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-}
-
-.education, .resume{
-    text-align: left;
 }
 
 .ab-heading{
@@ -74,20 +83,25 @@
     gap: 0.5rem;
 }
 
-.cap-icon, .res-icon{
+.cap-icon, .res-icon, .gsoc-icon{
     font-size: 2.2rem;
+    color: #C16E70;
 }
 
 .my-details {
-  width: 450px;
+  width: 100%;
+  flex: 1;
   border: 2px solid #C16E70;
   margin-top: 1rem;
   border-radius: 25px;
   box-shadow: 0 0 10px #C16E70, 0 0 20px #C16E70;
   background-color: rgba(242, 243, 217, 0.02);
   transition: all 0.3s ease;
-  padding: 1.5rem 2rem;
+  padding: 1.8rem 2rem;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .my-details:hover {
@@ -120,6 +134,12 @@
     margin-bottom: 0.8rem;
 }
 
+.resume a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .download-button{
     margin-top: 0.5rem;
     height: 3rem;
@@ -141,3 +161,15 @@
     transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+    .about-container h2 {
+        font-size: 2.5rem;
+    }
+    .about-intro img {
+        height: 180px;
+        width: 180px;
+    }
+    .about-intro p {
+        font-size: 1.05rem;
+    }
+}

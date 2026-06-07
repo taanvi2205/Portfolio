@@ -28,7 +28,7 @@ const contributions = [
         repoUrl: "https://github.com/jaegertracing/jaeger-ui",
         prUrl: "https://github.com/jaegertracing/jaeger-ui/pull/3476",
         description: "Refactored TimelineViewingLayer from class-based to functional component",
-        status: "open",
+        status: "closed",
         date: "Feb 2026",
         tech: ["React", "TypeScript", "Hooks"]
     },
@@ -88,7 +88,7 @@ const contributions = [
         repoUrl: "https://github.com/eclipse-sw360/sw360-frontend",
         prUrl: "https://github.com/eclipse-sw360/sw360-frontend/pull/1287",
         description: "Implemented autocomplete for components page search fields",
-        status: "merged",
+        status: "closed",
         date: "Dec 2025",
         tech: ["Next.js", "TypeScript", "Bootstrap"]
     },
@@ -98,9 +98,59 @@ const contributions = [
         repoUrl: "https://github.com/OpenMS/OpenMS",
         prUrl: "https://github.com/OpenMS/OpenMS/pull/8568",
         description: "Modernized codebase by migrating to enum class for type safety (~700 lines changed)",
-        status: "merged",
+        status: "closed",
         date: "Jan 2026",
         tech: ["C++", "CMake"]
+    },
+    {
+        title: "Add AutoTLS module for browser-trusted certificates",
+        repo: "NethermindEth/dotnet-libp2p",
+        repoUrl: "https://github.com/NethermindEth/dotnet-libp2p",
+        prUrl: "https://github.com/NethermindEth/dotnet-libp2p/pull/190",
+        description: "Added an opt-in module that obtains and renews publicly-trusted wildcard certificates via p2p-forge and Let's Encrypt, matching AutoTLS in go-libp2p and js-libp2p",
+        status: "merged",
+        date: "May 2026",
+        tech: ["C#", ".NET", "libp2p"]
+    },
+    {
+        title: "Fix reopen closed clearing request functionality",
+        repo: "eclipse-sw360/sw360-frontend",
+        repoUrl: "https://github.com/eclipse-sw360/sw360-frontend",
+        prUrl: "https://github.com/eclipse-sw360/sw360-frontend/pull/1468",
+        description: "Implemented reopenClearingRequest with a PATCH API call to reset clearing state to NEW and fixed submit button validation logic",
+        status: "merged",
+        date: "Jun 2026",
+        tech: ["Next.js", "TypeScript", "REST API"]
+    },
+    {
+        title: "Fix broken link and missing translation in projects",
+        repo: "eclipse-sw360/sw360-frontend",
+        repoUrl: "https://github.com/eclipse-sw360/sw360-frontend",
+        prUrl: "https://github.com/eclipse-sw360/sw360-frontend/pull/1442",
+        description: "Fixed the post-link success message to navigate to the correct project edit tab and resolved a missing translation key",
+        status: "merged",
+        date: "Feb 2026",
+        tech: ["Next.js", "TypeScript"]
+    },
+    {
+        title: "Batch API for license clearing count",
+        repo: "eclipse-sw360/sw360-frontend",
+        repoUrl: "https://github.com/eclipse-sw360/sw360-frontend",
+        prUrl: "https://github.com/eclipse-sw360/sw360-frontend/pull/1370",
+        description: "Replaced per-row API calls with a single batch POST request to fetch all license clearing counts, fixing 502 errors at larger page sizes",
+        status: "merged",
+        date: "Jan 2026",
+        tech: ["Next.js", "TypeScript", "REST API"]
+    },
+    {
+        title: "Add audit log functionality",
+        repo: "Whitedevil70011/Fusion_System_Administrator",
+        repoUrl: "https://github.com/Whitedevil70011/Fusion_System_Administrator",
+        prUrl: "https://github.com/Whitedevil70011/Fusion_System_Administrator/pull/1",
+        description: "Added audit log functionality to track system administrator actions",
+        status: "merged",
+        date: "Apr 2026",
+        tech: ["JavaScript"]
     }
 ];
 
@@ -125,13 +175,13 @@ const Contributions = () => {
                         <h3 className="card-title">{contribution.title}</h3>
 
                         <a
-                            href={contribution.repoUrl}
+                            href={contribution.prUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="card-repo"
                         >
                             <FaGithub />
-                            <span>{contribution.repo}</span>
+                            <span>{contribution.repo} #{contribution.prUrl.split('/').pop()}</span>
                         </a>
 
                         <p className="card-description">{contribution.description}</p>
